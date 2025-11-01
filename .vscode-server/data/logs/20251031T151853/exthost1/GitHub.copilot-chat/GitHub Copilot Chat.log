@@ -1,9 +1,0 @@
-2025-10-31 15:19:01.799 [info] Can't use the Electron fetcher in this environment.
-2025-10-31 15:19:01.799 [info] Using the Node fetch fetcher.
-2025-10-31 15:19:01.799 [info] Initializing Git extension service.
-2025-10-31 15:19:01.799 [info] Successfully activated the vscode.git extension.
-2025-10-31 15:19:01.799 [info] Enablement state of the vscode.git extension: true.
-2025-10-31 15:19:01.799 [info] Successfully registered Git commit message provider.
-2025-10-31 15:19:03.861 [info] Logged in as davifmn
-2025-10-31 15:19:04.655 [info] Got Copilot token for davifmn
-2025-10-31 15:19:05.885 [info] copilot token chat_enabled: undefined, sku: 

@@ -1,7 +1,0 @@
-2025-10-30 16:46:53.039 [info] Native locator: Refresh started
-2025-10-30 16:46:53.145 [info] Native locator: Refresh finished in 619 ms
-2025-10-30 16:46:55.597 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
-2025-10-30 16:46:55.634 [info] Python interpreter path: ./.venv/bin/python
-2025-10-30 16:46:57.952 [info] > pyenv which python
-2025-10-30 16:46:57.953 [info] cwd: .
-2025-10-30 16:47:08.812 [info] Starting Pylance language server.

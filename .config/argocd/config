@@ -1,0 +1,13 @@
+contexts:
+- name: localhost:31443
+  server: localhost:31443
+  user: localhost:31443
+current-context: localhost:31443
+prompts-enabled: false
+servers:
+- grpc-web-root-path: ""
+  insecure: true
+  server: localhost:31443
+users:
+- auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhcmdvY2QiLCJzdWIiOiJkYXZpbmV2ZXM6bG9naW4iLCJleHAiOjE3NjIwOTM2ODQsIm5iZiI6MTc2MjAwNzI4NCwiaWF0IjoxNzYyMDA3Mjg0LCJqdGkiOiJiYjZiZWJhNy1kYmUwLTRiN2UtOTdjOC04YmRmOTlmNmYxOTYifQ.9xEKSFFxW2r9FSqubBM_0pE7c2vW0Ihqk_PrOXOlT-M
+  name: localhost:31443

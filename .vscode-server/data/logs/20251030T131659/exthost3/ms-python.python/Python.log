@@ -1,8 +1,0 @@
-2025-10-30 14:51:30.171 [info] Native locator: Refresh started
-2025-10-30 14:51:30.171 [info] Native locator: Refresh finished in 230 ms
-2025-10-30 14:51:33.917 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
-2025-10-30 14:51:36.117 [info] > pyenv which python
-2025-10-30 14:51:36.117 [info] cwd: .
-2025-10-30 14:51:36.155 [info] Python interpreter path: ./.venv/bin/python
-2025-10-30 14:51:39.870 [info] Starting Pylance language server.
-2025-10-30 14:55:22.642 [info] Discover tests for workspace name: davineves - uri: /home/davineves/train_rules.py

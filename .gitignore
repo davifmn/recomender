@@ -1,0 +1,16 @@
+# editor / IDE
+.vscode/
+.vscode-server/
+# python
+__pycache__/
+*.pyc
+# models / artifacts
+*.pickle
+models/
+project2-pv/
+# local config / history
+.bash_history
+# docker build caches
+.docker/
+# misc
+*.log

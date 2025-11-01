@@ -479,3 +479,91 @@ kubectl -n davineves wait --for=condition=Ready pod/pvc-tools --timeout=60s
 kubectl -n davineves cp /path/to/2023_spotify_songs.csv pvc-tools:/mnt/pv/2023_spotify_songs.csv
 # verify
 kubectl -n davineves exec -it pvc-tools -- ls -lh /mnt/pv
+source /home/davineves/.venv/bin/activate
+kubectl -n davineves apply -f ml-job.yaml
+kubectl -n davineves get pods -l job-name=playlist-ml-ds1-v2
+kubectl -n davineves describe pod -l job-name=playlist-ml-ds1-v2
+kubectl -n davineves logs -f job/playlist-ml-ds1-v2
+clear
+kubectl -n davineves apply -f ml-job.yaml
+kubectl -n davineves get pods -l job-name=playlist-ml-ds1-v2
+kubectl -n davineves describe pod -l job-name=playlist-ml-ds1-v2
+kubectl -n davineves logs -f job/playlist-ml-ds1-v2
+kubectl -n davineves exec -it deploy/davineves-playlist-api -- ls -lh /models
+kubectl -n davineves exec -it deploy/davineves-playlist-api -- python -c "import pickle,os; p='/models/model.pickle'; print(os.path.exists(p)); print(len(pickle.load(open(p,'rb'))['rules']) if os.path.exists(p) else 'no file')"
+CLUSTER_IP=$(kubectl -n davineves get svc davineves-playlist-api -o jsonpath='{.spec.clusterIP}')
+curl -s -X POST -H "Content-Type: application/json"   -d '{"songs":["spotify:track:06iMqWThw4w8fTFyccvOwr"]}'   http://$CLUSTER_IP:30502/api/recommend
+clear
+kubectl -n davineves apply -f ml-job.yaml
+kubectl -n davineves logs -f job/playlist-ml-ds1-v2
+kubectl -n davifraga apply -f ml-job.yaml
+clear
+kubectl -n davineves apply -f ml-job.yaml
+kubectl -n davineves logs -f job/playlist-ml-ds1-v2
+git add .
+kubectl -n davineves apply -f ml-job.yaml
+kubectl -n davineves delete job playlist-ml-ds1-v2
+kubectl -n davineves apply -f ml-job.yaml
+kubectl -n davineves logs -f job/playlist-ml-ds1-v2
+kubectl -n davineves delete job playlist-ml-ds1-v2
+kubectl -n davineves apply -f ml-job.yaml
+curl -sS https://raw.githubusercontent.com/davifmn/playlist-argocd/main/2023_spotify_ds1.csv | head -n 20
+CLUSTER_IP=$(kubectl -n davineves get svc davineves-playlist-api -o jsonpath='{.spec.clusterIP}')
+curl -s -X POST -H "Content-Type: application/json" -d '{"songs":["spotify:track:06iMqWThw4w8fTFyccvOwr"]}' http://$CLUSTER_IP:30502/api/recommend
+# usando CLUSTER_IP que você já obteve
+curl -s -X POST -H "Content-Type: application/json"   -d '{"songs":["Red Solo Cup"]}'   http://$CLUSTER_IP:30502/api/recommend | jq .
+kubectl -n davineves get deployments
+kubectl -n davineves get services
+wget --server-response     --output-document response.out     --header='Content-Type: application/json'     --post-data '{"songs": ["Yesterday", "Bohemian Rhapsody"]}'     http://67.159.94.11:30502/api/recommender
+CLUSTER_IP=$(kubectl -n davineves get svc davineves-playlist-api -o jsonpath='{.spec.clusterIP}')
+curl -s -X POST -H "Content-Type: application/json"   -d '{"songs":["Red Solo Cup"]}'   http://$CLUSTER_IP:30502/api/recommend | jq .
+kubectl get ns argocd || echo "argocd namespace not found"
+kubectl -n argocd get pods -o wide
+kubectl -n argocd get svc -o wide
+kubectl get crd | grep argoproj || true
+kubectl -n davineves get pods
+kubectl -n davineves get svc
+kubectl -n davineves get applications.argoproj.io
+argocd login localhost:31443 --username <username> --password <password> --insecure
+argocd login localhost:31443 --username davineves --insecure
+cat ~/.ssh/id_rsa.pub | tr -d "\n" | md5sum
+argocd login localhost:31443 --username davineves --insecure
+clear
+cat ~/.ssh/id_rsa.pub | tr -d "\n" | md5sum
+echo -n "<conteúdo do id_rsa.pub>" | md5sum
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ""
+cat ~/.ssh/id_rsa.pub | tr -d "\n" | md5sum
+argocd login localhost:31443 --username davineves --password davinevesf1208cb119d8b1d720b98c1b3513b906 --insecure
+echo -n "$(cat ~/.ssh/id_rsa.pub)" | md5sum
+clear
+argocd login localhost:31443 --username davineves --password davinevesf1208cb119d8b1d720b98c1b3513b906 --insecure
+curl -k https://localhost:31443
+https://localhost:31443
+clear
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+cat ~/.ssh/id_rsa.pub | tr -d "\n" | md5sum
+clear
+echo -n "$(cat ~/.ssh/id_rsa.pub)" | md5sum
+argocd login localhost:31443 --username davineves --password davinevesf1208cb119d8b1d720b98c1b3513b906 --insecure
+kubectl -n davineves get pods
+kubectl -n davineves get svc
+image: docker.io/davifraga/playlist-api:0.2
+image: docker.io/davifraga/playlist-api:0.1
+git add .
+clear
+git init
+git add .
+git commit -m "Primeiro commit do projeto"
+git config user.name "davifmn"
+git config user.email "davifmn@gmail.com"
+git add .
+git commit -m "Primeiro commit do projeto"
+git status
+git log --oneline
+clear
+git add .
+git commit -m "argo manifest"
+git commit -m "argo manifest 2"
+git add .
+git commit -m "argo manifest 2"
+clear
