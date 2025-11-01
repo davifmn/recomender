@@ -1,0 +1,29 @@
+2025-10-31 01:15:08.462 [info] Starting Python Locator /home/davineves/.vscode-server/extensions/ms-python.python-2025.16.0-linux-x64/python-env-tools/bin/pet server
+2025-10-31 01:15:08.480 [info] Discovered env: /home/davineves/.venv/bin/python
+2025-10-31 01:15:08.483 [info] Discovered env: /home/davineves/venv/bin/python
+2025-10-31 01:15:08.489 [info] Discovered env: /bin/python
+2025-10-31 01:15:08.489 [info] Discovered env: /home/linuxbrew/.linuxbrew/bin/python3.13
+2025-10-31 01:15:08.490 [info] Discovered env: /usr/bin/python
+2025-10-31 01:15:08.490 [info] Discovered env: /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-31 01:15:08.490 [info] Locator Conda took 108.896074ms
+2025-10-31 01:15:08.490 [info] Locator Homebrew took 133.026941ms
+2025-10-31 01:15:08.490 [info] Locator LinuxGlobal took 124.937123ms
+2025-10-31 01:15:08.490 [info] Locator PipEnv took 656.675µs
+2025-10-31 01:15:08.491 [info] Locator Pixi took 625.381µs
+2025-10-31 01:15:08.491 [info] Locator Poetry took 1.769386ms
+2025-10-31 01:15:08.491 [info] Locator PyEnv took 1.22616ms
+2025-10-31 01:15:08.491 [info] Locator Venv took 746.081µs
+2025-10-31 01:15:08.491 [info] Locator VirtualEnv took 221.345µs
+2025-10-31 01:15:08.491 [info] Locator VirtualEnvWrapper took 273.399µs
+2025-10-31 01:15:08.491 [info] Locator GlobalVirtualEnvs took 1.114333ms
+2025-10-31 01:15:08.491 [info] Locator Locators took 135.452988ms
+2025-10-31 01:15:08.491 [info] Locator Path took 178.568915ms
+2025-10-31 01:15:08.491 [info] Locator Workspaces took 119.039234ms
+2025-10-31 01:15:08.491 [info] Refresh completed in 180ms
+2025-10-31 01:15:08.536 [info] Resolved /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-31 01:15:08.537 [info] Resolved /home/linuxbrew/.linuxbrew/bin/python3.13
+2025-10-31 01:15:13.192 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-31 01:17:33.010 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-31 01:31:30.322 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-31 01:32:10.046 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-31 01:34:37.206 [info] Resolved Python Environment /home/davineves/.venv/bin/python

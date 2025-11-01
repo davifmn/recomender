@@ -1,0 +1,22 @@
+2025-10-30 14:51:26.945 [info] Extension host with pid 2165096 started
+2025-10-30 14:51:26.956 [info] Lock '/home/davineves/.vscode-server/data/User/workspaceStorage/849d7adab7cba587fcde7054ea4cc778/vscode.lock': Lock acquired.
+2025-10-30 14:51:28.116 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-10-30 14:51:28.118 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-containers, startup: false, activationEvent: 'onLanguage:dockerfile'
+2025-10-30 14:51:28.118 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-10-30 14:51:28.927 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-10-30 14:51:28.928 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-10-30 14:51:29.176 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2025-10-30 14:51:32.255 [info] Eager extensions activated
+2025-10-30 14:51:32.255 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-10-30 14:51:32.256 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-10-30 14:51:32.256 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-10-30 14:51:32.256 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-10-30 14:51:36.414 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'api', root cause: ms-python.python
+2025-10-30 14:53:46.511 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2025-10-30 14:58:22.107 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-10-30 14:58:29.725 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-10-30 14:58:29.726 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-10-30 14:58:29.727 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-10-30 15:27:03.496 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-10-30 15:27:03.500 [info] Lock '/home/davineves/.vscode-server/data/User/workspaceStorage/849d7adab7cba587fcde7054ea4cc778/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-10-30 15:27:03.656 [info] Extension host with pid 2165096 exiting with code 0

@@ -1,0 +1,121 @@
+2025-10-31 22:28:47.063 [info] Can't use the Electron fetcher in this environment.
+2025-10-31 22:28:47.063 [info] Using the Node fetch fetcher.
+2025-10-31 22:28:47.063 [info] Initializing Git extension service.
+2025-10-31 22:28:47.063 [info] Successfully activated the vscode.git extension.
+2025-10-31 22:28:47.063 [info] Enablement state of the vscode.git extension: true.
+2025-10-31 22:28:47.063 [info] Successfully registered Git commit message provider.
+2025-10-31 22:28:49.190 [info] Logged in as davifmn
+2025-10-31 22:28:50.357 [info] Got Copilot token for davifmn
+2025-10-31 22:28:50.932 [info] copilot token chat_enabled: true, sku: yearly_subscriber_quota
+2025-10-31 22:28:50.932 [info] GitHub.vscode-pull-request-github extension is not yet activated.
+2025-10-31 22:28:50.947 [info] Registering default platform agent...
+2025-10-31 22:28:51.724 [info] Fetched model metadata in 1356ms 151d972a-80fb-4611-83e5-fe5eeac2b112
+2025-10-31 22:28:51.801 [info] activationBlocker from 'languageModelAccess' took for 3521ms
+2025-10-31 22:33:29.095 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:33:29.099 [info] request done: requestId: [da67a2b8-a51e-4514-81d6-d74a028dbaec] model deployment ID: []
+2025-10-31 22:33:35.052 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:33:35.054 [info] request done: requestId: [42f1837e-e685-4a5e-a3e7-0f52142ebd5d] model deployment ID: []
+2025-10-31 22:34:57.655 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:34:57.672 [info] request done: requestId: [3c287f1e-3e8e-4947-8dc8-51d034636528] model deployment ID: []
+2025-10-31 22:35:00.442 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:35:00.445 [info] request done: requestId: [f38c26c3-be8b-4e4c-b14c-79cdda595174] model deployment ID: []
+2025-10-31 22:35:02.684 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:35:02.689 [info] request done: requestId: [b40ee3ba-27f2-40b5-8cbb-0449200b53ec] model deployment ID: []
+2025-10-31 22:35:58.252 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [176acaf8-6092-48aa-b044-472c9863ab58]
+2025-10-31 22:36:09.427 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [d3b08653-59c5-4273-842c-2988eed03792]
+2025-10-31 22:37:42.983 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:37:42.985 [info] request done: requestId: [372445fc-9edd-40df-b35f-1eced1f3897d] model deployment ID: []
+2025-10-31 22:38:42.945 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:38:42.949 [info] request done: requestId: [761cb287-d4ff-49ca-8c77-e75117bdad12] model deployment ID: []
+2025-10-31 22:39:57.125 [info] Fetched model metadata in 747ms d7e5b814-0cab-4b4c-961f-f5711758c7b7
+2025-10-31 22:40:02.974 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:40:02.977 [info] request done: requestId: [65b1d985-5f9a-46d9-bb8a-d3acf36553c0] model deployment ID: []
+2025-10-31 22:41:00.919 [info] message 0 returned. finish reason: [stop]
+2025-10-31 22:41:00.923 [info] request done: requestId: [64bc82c2-8e79-428b-bd74-399960ed140f] model deployment ID: []
+2025-10-31 22:58:53.008 [info] Logged in as davifmn
+2025-10-31 22:58:53.731 [info] Got Copilot token for davifmn
+2025-10-31 22:58:54.112 [info] copilot token chat_enabled: true, sku: yearly_subscriber_quota
+2025-10-31 22:58:54.665 [info] Fetched model metadata in 914ms 40a2e6a1-0c11-4a59-b56a-378f4b89f9cf
+2025-10-31 23:05:51.918 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:05:51.923 [info] request done: requestId: [98488bc7-2ffd-46b7-87b2-0e7367e49f4e] model deployment ID: []
+2025-10-31 23:07:01.608 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:07:01.611 [info] request done: requestId: [43922b2e-ec15-4cbe-b0d3-d36eab440e14] model deployment ID: []
+2025-10-31 23:17:33.924 [info] Fetched model metadata in 904ms 52d8a1fc-dd89-455b-ac00-c8960e5ec92a
+2025-10-31 23:17:38.242 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [ea9eecb9-0ee9-4bfc-b781-2b3c3ad06267]
+2025-10-31 23:20:22.672 [info] Logged in as davifmn
+2025-10-31 23:20:23.364 [info] Got Copilot token for davifmn
+2025-10-31 23:20:23.720 [info] copilot token chat_enabled: true, sku: yearly_subscriber_quota
+2025-10-31 23:20:26.983 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:20:26.986 [info] request done: requestId: [326ca5d9-5162-41a1-a6c9-e9d374124368] model deployment ID: []
+2025-10-31 23:21:01.302 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:21:01.310 [info] request done: requestId: [eddf15e5-90ca-4c88-ba29-9cd10af84279] model deployment ID: []
+2025-10-31 23:29:42.534 [info] Fetched model metadata in 1416ms 30c8bbab-5f2c-419e-9cbe-809f077268ad
+2025-10-31 23:29:49.120 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:29:49.124 [info] request done: requestId: [99d8ba92-7e2f-43f4-96c4-76ba84c6dae9] model deployment ID: []
+2025-10-31 23:30:42.843 [info] request done: requestId: [59f54c62-6878-4bc2-a883-b424dbe6c2de] model deployment ID: []
+2025-10-31 23:30:56.874 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:30:56.876 [info] request done: requestId: [80f9511b-19b6-47c5-9a03-0c69baa7f24f] model deployment ID: []
+2025-10-31 23:32:02.731 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:32:02.745 [info] request done: requestId: [016cc9f0-845e-4d0e-b048-2e0c3fc5f40a] model deployment ID: []
+2025-10-31 23:32:04.173 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:32:04.268 [info] request done: requestId: [0f4a5f25-9262-4ec5-abdd-bdf1d3d265b5] model deployment ID: []
+2025-10-31 23:32:04.404 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:32:04.492 [info] request done: requestId: [0497b12c-85f8-4081-b363-72003fc4e598] model deployment ID: []
+2025-10-31 23:32:47.457 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [d5f4a09b-2fa6-4cfd-ba01-217221ed8f06]
+2025-10-31 23:33:27.296 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [95168975-6900-461b-9911-76c4e49b3a24]
+2025-10-31 23:33:42.269 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [e2e8b920-f25a-448f-98ce-cf23b6caf1aa]
+2025-10-31 23:40:50.132 [info] Fetched model metadata in 1073ms e7d61e35-7cb4-4dbe-bc9e-407b26ea8288
+2025-10-31 23:40:53.559 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:40:53.562 [info] request done: requestId: [7a7ce427-d94f-48d1-b5c2-135eb6df21c1] model deployment ID: []
+2025-10-31 23:40:57.296 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:40:57.298 [info] request done: requestId: [b734f3a2-27b9-40b4-ad92-9acc9d5b9ba5] model deployment ID: []
+2025-10-31 23:41:48.205 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:41:48.209 [info] request done: requestId: [547ffe5e-81a7-4457-8625-0c6aeb4f4947] model deployment ID: []
+2025-10-31 23:41:48.558 [info] Logged in as davifmn
+2025-10-31 23:41:49.274 [info] Got Copilot token for davifmn
+2025-10-31 23:41:49.780 [info] copilot token chat_enabled: true, sku: yearly_subscriber_quota
+2025-10-31 23:41:50.849 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:41:50.851 [info] request done: requestId: [392fa454-621e-4f38-85ab-359d245063a4] model deployment ID: []
+2025-10-31 23:46:23.527 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [036db66b-369b-46c8-9a33-10f431f09c55]
+2025-10-31 23:46:52.813 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [48b4fb28-32d7-4ab8-ac58-d1b07d1beed2]
+2025-10-31 23:47:53.745 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:47:53.748 [info] request done: requestId: [d81fca71-7af4-43fa-842d-43f3c1cbfb03] model deployment ID: []
+2025-10-31 23:48:25.468 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:48:25.480 [info] request done: requestId: [5a04bec5-f00a-478b-ab98-181248d23396] model deployment ID: []
+2025-10-31 23:48:47.241 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [5a99acec-72f2-42ce-a616-84cb2eaf2093]
+2025-10-31 23:48:55.933 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [f81aae21-cf99-452e-9291-1a789aae0d32]
+2025-10-31 23:51:29.751 [info] Fetched model metadata in 849ms 59e45abc-d350-4c7a-ad4b-b46ea6a0b834
+2025-10-31 23:51:36.379 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:51:36.381 [info] request done: requestId: [a2561fa6-a04a-4756-b53f-6e363185d8c2] model deployment ID: []
+2025-10-31 23:52:28.661 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:52:28.665 [info] request done: requestId: [e7143c14-b2ea-496b-a086-24de0cb3e69a] model deployment ID: []
+2025-10-31 23:56:19.550 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:56:19.556 [info] request done: requestId: [245b230f-aab3-4521-a3ab-b05c21274f04] model deployment ID: []
+2025-10-31 23:57:07.486 [info] message 0 returned. finish reason: [stop]
+2025-10-31 23:57:07.490 [info] request done: requestId: [74d88ea4-3010-4966-938a-f75fdcb3c999] model deployment ID: []
+2025-10-31 23:57:22.255 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [99c0cb99-16c7-4c3f-a2e2-7004d343e77a]
+2025-10-31 23:57:54.722 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [ecfc79e4-8747-44ca-9ed5-32ae157101a7]
+2025-11-01 00:02:33.450 [info] Fetched model metadata in 1043ms 7ac684b1-a826-4dae-b073-57fe3d1c8bb7
+2025-11-01 00:02:49.390 [info] message 0 returned. finish reason: [stop]
+2025-11-01 00:02:49.393 [info] request done: requestId: [363126f9-aa52-4f80-a5cc-72d6801d30b1] model deployment ID: []
+2025-11-01 00:02:50.976 [info] Logged in as davifmn
+2025-11-01 00:02:51.904 [info] Got Copilot token for davifmn
+2025-11-01 00:02:52.259 [info] copilot token chat_enabled: true, sku: yearly_subscriber_quota
+2025-11-01 00:03:37.747 [info] message 0 returned. finish reason: [stop]
+2025-11-01 00:03:37.750 [info] request done: requestId: [0a58a0cb-a3f7-4c1a-a766-28d9cde6b626] model deployment ID: []
+2025-11-01 00:04:36.539 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [38da7a94-29c7-4586-8822-46df8afcec6a]
+2025-11-01 00:19:35.149 [info] Fetched model metadata in 925ms e9514c6b-47f6-4e38-b966-ef074971ff5e
+2025-11-01 00:19:43.253 [info] message 0 returned. finish reason: [stop]
+2025-11-01 00:19:43.256 [info] request done: requestId: [1ddaeb7a-f402-4c53-b2d2-b56d2fb80d7e] model deployment ID: []
+2025-11-01 00:24:04.342 [info] message 0 returned. finish reason: [stop]
+2025-11-01 00:24:04.345 [info] request done: requestId: [f7283bf0-29d5-4b3a-b4dd-8b5f84b432d0] model deployment ID: []
+2025-11-01 00:24:05.665 [info] Logged in as davifmn
+2025-11-01 00:24:08.720 [info] Got Copilot token for davifmn
+2025-11-01 00:24:09.111 [info] copilot token chat_enabled: true, sku: yearly_subscriber_quota
+2025-11-01 00:24:55.305 [info] message 0 returned. finish reason: [stop]
+2025-11-01 00:24:55.310 [info] request done: requestId: [e7e96862-203a-4d9a-8fdf-a6a0b775098f] model deployment ID: []
+2025-11-01 00:39:10.463 [info] Fetched model metadata in 1123ms faf229a0-c25c-4134-8f64-9628193ecee8
+2025-11-01 00:54:10.795 [info] Logged in as davifmn
+2025-11-01 00:54:11.646 [info] Got Copilot token for davifmn
+2025-11-01 00:54:11.974 [info] copilot token chat_enabled: true, sku: yearly_subscriber_quota
+2025-11-01 00:54:12.655 [info] Fetched model metadata in 1000ms e0457263-2f92-4b34-a57b-cc0ff7dd4a6c

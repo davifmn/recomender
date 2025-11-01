@@ -1,0 +1,16 @@
+2025-10-31 22:28:44.043 [info] 
+
+
+
+
+2025-10-31 22:28:44.054 [info] Extension host agent started.
+2025-10-31 22:28:44.127 [info] [<unknown>][674c1f5b][ManagementConnection] New connection established.
+2025-10-31 22:28:44.155 [info] [<unknown>][8e2d950d][ExtensionHostConnection] New connection established.
+2025-10-31 22:28:44.254 [info] [<unknown>][8e2d950d][ExtensionHostConnection] <2445066> Launched Extension Host Process.
+2025-10-31 22:33:44.055 [info] New EH opened, aborting shutdown
+2025-10-31 23:27:00.459 [error] AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1122:18)
+    at afterConnectMultiple (node:net:1689:7)
+2025-10-31 23:27:14.965 [error] AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1122:18)
+    at afterConnectMultiple (node:net:1689:7)

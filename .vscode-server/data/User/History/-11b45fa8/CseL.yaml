@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: project2-claim
+spec:
+  storageClassName: default-storage-class-davineves
+  volumeName: project2-pv2-davineves
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  selector:
+    matchLabels:
+      namespace: davineves

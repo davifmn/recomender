@@ -1,0 +1,75 @@
+2025-10-30 12:38:20.201 [info] 
+
+
+
+
+2025-10-30 12:38:20.210 [info] Extension host agent started.
+2025-10-30 12:38:20.249 [info] Started initializing default profile extensions in extensions installation folder. file:///home/davineves/.vscode-server/extensions
+2025-10-30 12:38:20.294 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/davineves/.vscode-server/extensions
+2025-10-30 12:38:20.835 [info] [<unknown>][4f3e542a][ExtensionHostConnection] New connection established.
+2025-10-30 12:38:20.865 [info] [<unknown>][845f779b][ManagementConnection] New connection established.
+2025-10-30 12:38:20.943 [info] [<unknown>][4f3e542a][ExtensionHostConnection] <2152529> Launched Extension Host Process.
+2025-10-30 12:38:25.967 [error] CodeExpectedError: Could not find pty 4 on pty host
+    at I.W (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12275)
+    at I.updateTitle (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7722)
+    at O.s.<computed> (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at el.s (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80918)
+    at el.q (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80441)
+    at ds.value (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79843)
+    at x.B (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at x.fire (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29877)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-10-30 12:38:25.973 [error] CodeExpectedError: Could not find pty 4 on pty host
+    at I.W (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12275)
+    at I.updateIcon (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7772)
+    at O.s.<computed> (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at el.s (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80918)
+    at el.q (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80441)
+    at ds.value (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79843)
+    at x.B (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at x.fire (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29877)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-10-30 12:40:27.343 [info] [<unknown>][845f779b][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-10-30 12:40:27.385 [info] [<unknown>][4f3e542a][ExtensionHostConnection] <2152529> Extension Host Process exited with code: 0, signal: null.
+2025-10-30 12:40:27.385 [info] Cancelling previous shutdown timeout
+2025-10-30 12:40:27.386 [info] Last EH closed, waiting before shutting down
+2025-10-30 12:40:30.209 [info] [<unknown>][a5784989][ManagementConnection] New connection established.
+2025-10-30 12:40:30.211 [info] [<unknown>][12360962][ExtensionHostConnection] New connection established.
+2025-10-30 12:40:30.221 [info] [<unknown>][12360962][ExtensionHostConnection] <2152878> Launched Extension Host Process.
+2025-10-30 12:41:23.114 [info] Getting Manifest... ms-python.python
+2025-10-30 12:41:23.214 [info] Installing extension: ms-python.python {"isMachineScoped":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/davineves/.vscode-server/extensions/extensions.json","external":"file:///home/davineves/.vscode-server/extensions/extensions.json","path":"/home/davineves/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.98.2","date":"2025-03-12T13:32:45.399Z"}}
+2025-10-30 12:41:24.421 [info] Getting Manifest... ms-python.vscode-pylance
+2025-10-30 12:41:24.450 [info] Getting Manifest... ms-python.debugpy
+2025-10-30 12:41:24.849 [info] Skipping the packed extension as it cannot be installed ms-python.vscode-python-envs Can't install 'ms-python.vscode-python-envs' extension because it is not compatible with the current version of Visual Studio Code (version 1.98.2).
+2025-10-30 12:41:25.204 [info] Installing extension: ms-python.vscode-pylance {"isMachineScoped":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/davineves/.vscode-server/extensions/extensions.json","external":"file:///home/davineves/.vscode-server/extensions/extensions.json","path":"/home/davineves/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.98.2","date":"2025-03-12T13:32:45.399Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2025-10-30 12:41:25.205 [info] Installing extension: ms-python.debugpy {"isMachineScoped":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/davineves/.vscode-server/extensions/extensions.json","external":"file:///home/davineves/.vscode-server/extensions/extensions.json","path":"/home/davineves/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.98.2","date":"2025-03-12T13:32:45.399Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2025-10-30 12:41:29.387 [info] Extension signature verification result for ms-python.python: Success. Internal Code: 0. Executed: true. Duration: 3149ms.
+2025-10-30 12:41:29.430 [info] Extension signature verification result for ms-python.debugpy: Success. Internal Code: 0. Executed: true. Duration: 3006ms.
+2025-10-30 12:41:30.234 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Internal Code: 0. Executed: true. Duration: 2359ms.
+2025-10-30 12:41:30.569 [info] Extracted extension to file:///home/davineves/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64: ms-python.debugpy
+2025-10-30 12:41:30.625 [info] Renamed to /home/davineves/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-x64
+2025-10-30 12:41:32.101 [info] Extracted extension to file:///home/davineves/.vscode-server/extensions/ms-python.python-2025.16.0-linux-x64: ms-python.python
+2025-10-30 12:41:32.305 [info] Renamed to /home/davineves/.vscode-server/extensions/ms-python.python-2025.16.0-linux-x64
+2025-10-30 12:41:39.223 [info] Extracted extension to file:///home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1: ms-python.vscode-pylance
+2025-10-30 12:41:39.823 [info] Renamed to /home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1
+2025-10-30 12:41:39.858 [info] Extension installed successfully: ms-python.debugpy file:///home/davineves/.vscode-server/extensions/extensions.json
+2025-10-30 12:41:39.859 [info] Extension installed successfully: ms-python.python file:///home/davineves/.vscode-server/extensions/extensions.json
+2025-10-30 12:41:39.859 [info] Extension installed successfully: ms-python.vscode-pylance file:///home/davineves/.vscode-server/extensions/extensions.json
+2025-10-30 12:45:27.386 [info] New EH opened, aborting shutdown
+2025-10-30 12:55:31.521 [info] [<unknown>][a5784989][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-10-30 12:55:42.806 [info] [<unknown>][a5784989][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-10-30 12:55:42.808 [info] [<unknown>][a5784989][ManagementConnection] The client has reconnected.
+2025-10-30 13:00:42.997 [info] [<unknown>][12360962][ExtensionHostConnection] <2152878> Extension Host Process exited with code: 0, signal: null.
+2025-10-30 13:00:43.001 [info] Last EH closed, waiting before shutting down
+2025-10-30 13:00:43.003 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/server-main.js:183:1060)
+    at process.emit (node:events:530:35)
+2025-10-30 13:05:43.003 [info] Last EH closed, shutting down

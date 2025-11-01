@@ -1,0 +1,40 @@
+2025-10-30 12:41:47.591 [info] (Client) Pylance async client (2025.4.1) started with python extension (2025.16.0)
+2025-10-30 12:41:47.853 [info] [Info  - 12:41:47 PM] (2153468) Server root directory: file:///home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-10-30 12:41:47.854 [info] [Info  - 12:41:47 PM] (2153468) Pylance language server 2025.4.1 (pyright version 1.1.398, commit 4f24eccc) starting
+2025-10-30 12:41:47.854 [info] [Info  - 12:41:47 PM] (2153468) Starting service instance "davineves" for workspace "/home/davineves"
+2025-10-30 12:41:47.935 [info] [Info  - 12:41:47 PM] (2153468) Setting environmentName for service "davineves": "3.14.0 (global)"
+2025-10-30 12:41:47.936 [info] [Info  - 12:41:47 PM] (2153468) Setting pythonPath for service "davineves": "/home/linuxbrew/.linuxbrew/bin/python3"
+2025-10-30 12:41:47.937 [info] [Info  - 12:41:47 PM] (2153468) No include entries specified; assuming /home/davineves
+2025-10-30 12:41:47.938 [info] [Info  - 12:41:47 PM] (2153468) Auto-excluding **/node_modules
+2025-10-30 12:41:47.939 [info] [Info  - 12:41:47 PM] (2153468) Auto-excluding **/__pycache__
+2025-10-30 12:41:47.940 [info] [Info  - 12:41:47 PM] (2153468) Auto-excluding **/.*
+2025-10-30 12:41:48.021 [info] [Info  - 12:41:48 PM] (2153468) Assuming Python version 3.14.0.final.0
+2025-10-30 12:41:49.056 [info] [Info  - 12:41:49 PM] (2153468) Found 1 source file
+2025-10-30 12:41:49.842 [info] [Info  - 12:41:49 PM] (2153468) Setting environmentName for service "davineves": "3.14.0 (global)"
+2025-10-30 12:41:49.843 [info] [Info  - 12:41:49 PM] (2153468) Setting pythonPath for service "davineves": "/home/linuxbrew/.linuxbrew/bin/python3"
+2025-10-30 12:41:49.843 [info] [Info  - 12:41:49 PM] (2153468) No include entries specified; assuming /home/davineves
+2025-10-30 12:41:49.843 [info] [Info  - 12:41:49 PM] (2153468) Auto-excluding **/node_modules
+2025-10-30 12:41:49.843 [info] [Info  - 12:41:49 PM] (2153468) Auto-excluding **/__pycache__
+2025-10-30 12:41:49.843 [info] [Info  - 12:41:49 PM] (2153468) Auto-excluding **/.*
+2025-10-30 12:41:49.955 [info] [Info  - 12:41:49 PM] (2153468) Assuming Python version 3.14.0.final.0
+2025-10-30 12:41:50.922 [info] [Info  - 12:41:50 PM] (2153468) Found 1 source file
+2025-10-30 12:41:52.884 [info] [Info  - 12:41:52 PM] (2153468) BG: Priority queue background worker(2) root directory: file:///home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-10-30 12:41:52.884 [info] [Info  - 12:41:52 PM] (2153468) BG: Priority queue background worker(2) started
+2025-10-30 12:41:54.550 [info] [Info  - 12:41:54 PM] (2153468) BG: Indexer background runner(3) root directory: file:///home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1/dist (index)
+2025-10-30 12:41:54.550 [info] [Info  - 12:41:54 PM] (2153468) BG: Indexing(3) started
+2025-10-30 12:41:56.467 [info] [Info  - 12:41:56 PM] (2153468) BG: scanned(3) 13 files over 1 exec env
+2025-10-30 12:41:57.912 [info] [Info  - 12:41:57 PM] (2153468) BG: indexed(3) 13 files over 1 exec env
+2025-10-30 12:41:58.163 [info] [Info  - 12:41:58 PM] (2153468) BG: Indexing finished(3).
+2025-10-30 12:42:14.576 [info] [Info  - 12:42:14 PM] (2153468) Setting environmentName for service "davineves": "3.14.0 (global)"
+2025-10-30 12:42:14.577 [info] [Info  - 12:42:14 PM] (2153468) Setting pythonPath for service "davineves": "/home/linuxbrew/.linuxbrew/bin/python3"
+2025-10-30 12:42:14.577 [info] [Info  - 12:42:14 PM] (2153468) No include entries specified; assuming /home/davineves
+2025-10-30 12:42:14.578 [info] [Info  - 12:42:14 PM] (2153468) Auto-excluding **/node_modules
+2025-10-30 12:42:14.579 [info] [Info  - 12:42:14 PM] (2153468) Auto-excluding **/__pycache__
+2025-10-30 12:42:14.579 [info] [Info  - 12:42:14 PM] (2153468) Auto-excluding **/.*
+2025-10-30 12:42:14.683 [info] [Info  - 12:42:14 PM] (2153468) Assuming Python version 3.14.0.final.0
+2025-10-30 12:42:14.799 [info] [Info  - 12:42:14 PM] (2153468) Found 1 source file
+2025-10-30 12:42:15.458 [info] [Info  - 12:42:15 PM] (2153468) BG: Indexer background runner(4) root directory: file:///home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1/dist (index)
+2025-10-30 12:42:15.458 [info] [Info  - 12:42:15 PM] (2153468) BG: Indexing(4) started
+2025-10-30 12:42:15.836 [info] [Info  - 12:42:15 PM] (2153468) BG: scanned(4) 13 files over 1 exec env
+2025-10-30 12:42:16.088 [info] [Info  - 12:42:16 PM] (2153468) BG: indexed(4) 13 files over 1 exec env
+2025-10-30 12:42:16.122 [info] [Info  - 12:42:16 PM] (2153468) BG: Indexing finished(4).

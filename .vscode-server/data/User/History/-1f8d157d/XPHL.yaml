@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: davineves-playlist-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: davineves-playlist-api
+  template:
+    metadata:
+      labels:
+        app: davineves-playlist-api
+    spec:
+      containers:
+      - name: api
+        image: docker.io/davifraga/playlist-api:0.1
+        ports:
+        - containerPort: 30502
+        env:
+        - name: MODEL_PATH
+          value: /models/model.pickle
+        volumeMounts:
+        - mountPath: /models
+          name: models
+      volumes:
+      - name: models
+        persistentVolumeClaim:
+          claimName: project2-claim

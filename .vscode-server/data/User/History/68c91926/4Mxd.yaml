@@ -1,0 +1,35 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: playlist-ml-ds1-v1
+spec:
+  template:
+    metadata:
+      name: playlist-ml-{{timestamp}}
+    spec:
+      containers:
+      - name: ml
+        image: docker.io/davifraga/playlist-ml:0.1
+        args:
+          - "--input"
+          - "/data/2023_spotify_ds1.csv"
+          - "--out"
+          - "/models/model.pickle"
+          - "--min-sup"
+          - "0.02"
+          - "--min-conf"
+          - "0.5"
+        volumeMounts:
+          - name: dataset
+            mountPath: /data
+          - name: models
+            mountPath: /models
+      restartPolicy: Never
+      volumes:
+        - name: dataset
+          hostPath:
+            path: /home/datasets/spotify
+        - name: models
+          persistentVolumeClaim:
+            claimName: project2-claim
+  backoffLimit: 2

@@ -1,0 +1,31 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: playlist-ml-ds1-v2
+spec:
+  template:
+    spec:
+      containers:
+      - name: ml
+        image: docker.io/davifraga/playlist-ml:0.1
+        command: ["/bin/sh","-c"]
+        args:
+          - >
+            python /app/train_rules.py
+            --input "$DATA_URL"
+            --out /models/model.pickle
+            --min-sup 0.02
+            --min-conf 0.5
+        env:
+          - name: DATA_URL
+            value: "https://raw.githubusercontent.com/davifmn/playlist-argocd/main/2023_spotify_ds1.csv"
+
+        volumeMounts:
+          - name: models
+            mountPath: /models
+      restartPolicy: Never
+      volumes:
+        - name: models
+          persistentVolumeClaim:
+            claimName: project2-claim
+  backoffLimit: 2

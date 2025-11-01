@@ -1,0 +1,42 @@
+2025-10-31 01:15:14.035 [info] [Info  - 1:15:14 AM] (2315618) Server root directory: file:///home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-10-31 01:15:14.045 [info] [Info  - 1:15:14 AM] (2315618) Pylance language server 2025.4.1 (pyright version 1.1.398, commit 4f24eccc) starting
+2025-10-31 01:15:14.056 [info] [Info  - 1:15:14 AM] (2315618) Starting service instance "davineves" for workspace "/home/davineves"
+2025-10-31 01:15:14.280 [info] [Info  - 1:15:14 AM] (2315618) Setting environmentName for service "davineves": "3.14.0 (.venv venv)"
+2025-10-31 01:15:14.281 [info] [Info  - 1:15:14 AM] (2315618) Setting pythonPath for service "davineves": "/home/davineves/.venv/bin/python"
+2025-10-31 01:15:14.282 [info] [Info  - 1:15:14 AM] (2315618) No include entries specified; assuming /home/davineves
+2025-10-31 01:15:14.284 [info] [Info  - 1:15:14 AM] (2315618) Auto-excluding **/node_modules
+2025-10-31 01:15:14.284 [info] [Info  - 1:15:14 AM] (2315618) Auto-excluding **/__pycache__
+2025-10-31 01:15:14.284 [info] [Info  - 1:15:14 AM] (2315618) Auto-excluding **/.*
+2025-10-31 01:15:14.392 [info] [Info  - 1:15:14 AM] (2315618) Assuming Python version 3.14.0.final.0
+2025-10-31 01:15:14.598 [info] [Info  - 1:15:14 AM] (2315618) Auto-excluding /home/davineves/venv
+2025-10-31 01:15:14.603 [info] [Info  - 1:15:14 AM] (2315618) Found 3 source files
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) Setting environmentName for service "davineves": "3.14.0 (.venv venv)"
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) Setting pythonPath for service "davineves": "/home/davineves/.venv/bin/python"
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) No include entries specified; assuming /home/davineves
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) Auto-excluding **/node_modules
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) Auto-excluding **/__pycache__
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) Auto-excluding **/.*
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) Assuming Python version 3.14.0.final.0
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) Auto-excluding /home/davineves/venv
+2025-10-31 01:15:14.890 [info] [Info  - 1:15:14 AM] (2315618) Found 3 source files
+2025-10-31 01:15:15.240 [info] [Info  - 1:15:15 AM] (2315618) BG: Priority queue background worker(2) root directory: file:///home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-10-31 01:15:15.241 [info] [Info  - 1:15:15 AM] (2315618) BG: Priority queue background worker(2) started
+2025-10-31 01:15:15.662 [info] [Info  - 1:15:15 AM] (2315618) BG: Indexer background runner(3) root directory: file:///home/davineves/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1/dist (index)
+2025-10-31 01:15:15.662 [info] [Info  - 1:15:15 AM] (2315618) BG: Indexing(3) started
+2025-10-31 01:15:16.353 [info] [Info  - 1:15:16 AM] (2315618) BG: scanned(3) 73 files over 1 exec env
+2025-10-31 01:15:16.643 [info] [Info  - 1:15:16 AM] (2315618) BG: indexed(3) 73 files over 1 exec env
+2025-10-31 01:15:16.692 [info] [Info  - 1:15:16 AM] (2315618) BG: Indexing finished(3).
+2025-10-31 01:15:24.127 [info] (Client) The existing extension didn't exit within 10 seconds. New instance will start, but you might encounter issues.
+2025-10-31 01:15:24.127 [info] (Client) Pylance async client (2025.4.1) started with python extension (2025.16.0)
+2025-10-31 01:17:32.981 [info] [Info  - 1:17:32 AM] (2315618) virtual workspace: vscode-chat-code-block://fae1c465-f392-461d-8c37-9e1284c12ea8/
+2025-10-31 01:17:32.982 [info] [Info  - 1:17:32 AM] (2315618) Starting service instance "<default>" for workspace "vscode-chat-code-block://fae1c465-f392-461d-8c37-9e1284c12ea8/"
+2025-10-31 01:17:33.078 [info] [Info  - 1:17:33 AM] (2315618) Setting environmentName for service "<default>": "3.14.0 (.venv venv)"
+2025-10-31 01:17:33.079 [info] [Info  - 1:17:33 AM] (2315618) No include entries specified; assuming vscode-chat-code-block://fae1c465-f392-461d-8c37-9e1284c12ea8/
+2025-10-31 01:17:33.080 [info] [Info  - 1:17:33 AM] (2315618) Auto-excluding **/node_modules
+2025-10-31 01:17:33.080 [info] [Info  - 1:17:33 AM] (2315618) Auto-excluding **/__pycache__
+2025-10-31 01:17:33.081 [info] [Info  - 1:17:33 AM] (2315618) Auto-excluding **/.*
+2025-10-31 01:17:33.125 [info] [Info  - 1:17:33 AM] (2315618) Assuming Python version 3.11.2.final.0
+2025-10-31 01:17:33.221 [info] [Error - 1:17:33 AM] (2315618) File or directory "vscode-chat-code-block://fae1c465-f392-461d-8c37-9e1284c12ea8/" does not exist.
+2025-10-31 01:17:33.221 [info] [Info  - 1:17:33 AM] (2315618) No source files found.
+2025-10-31 01:27:01.699 [info] [Info  - 1:27:01 AM] (2315618) Auto-excluding /home/davineves/venv
+2025-10-31 01:27:01.712 [info] [Info  - 1:27:01 AM] (2315618) Found 5 source files

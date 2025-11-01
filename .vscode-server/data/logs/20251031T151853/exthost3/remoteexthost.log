@@ -1,0 +1,30 @@
+2025-10-31 15:40:32.776 [info] Extension host with pid 2376509 started
+2025-10-31 15:40:32.776 [error] Error: EEXIST: file already exists, open '/home/davineves/.vscode-server/data/User/workspaceStorage/849d7adab7cba587fcde7054ea4cc778/vscode.lock'
+2025-10-31 15:40:32.782 [info] Lock '/home/davineves/.vscode-server/data/User/workspaceStorage/849d7adab7cba587fcde7054ea4cc778/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-10-31 15:40:32.788 [info] Lock '/home/davineves/.vscode-server/data/User/workspaceStorage/849d7adab7cba587fcde7054ea4cc778/vscode.lock': The lock does not look stale, elapsed: 517 ms, giving up.
+2025-10-31 15:40:32.798 [info] Lock '/home/davineves/.vscode-server/data/User/workspaceStorage/849d7adab7cba587fcde7054ea4cc778-1/vscode.lock': Lock acquired.
+2025-10-31 15:40:33.074 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-10-31 15:40:33.075 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onChatParticipant:github.copilot.default'
+2025-10-31 15:40:33.088 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-10-31 15:40:33.088 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-10-31 15:40:33.089 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2025-10-31 15:40:35.697 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-10-31 15:40:35.698 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-10-31 15:40:38.918 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2025-10-31 15:40:38.918 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2025-10-31 15:40:39.413 [info] Eager extensions activated
+2025-10-31 15:40:39.414 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-10-31 15:40:39.414 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-10-31 15:40:39.415 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-10-31 15:40:57.996 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-10-31 15:41:06.715 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-10-31 15:41:06.715 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-10-31 15:41:06.716 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-10-31 15:51:21.011 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-containers, startup: false, activationEvent: 'onLanguage:dockerfile'
+2025-10-31 16:25:41.760 [error] EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/davineves/.cache/pip/http-v2/a/1/9/5/3/a19537d3cf37c122db841d6fe4cd322bc10d1a558bb00d146b85cb9ax68bha_i.tmp'
+    at Function.e (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:112:18097)
+    at Object.stat (file:///home/davineves/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:112:16044)
+    at Th.value (/home/davineves/.vscode-server/extensions/github.copilot-chat-0.25.1/dist/extension.js:652:18258)
+2025-10-31 21:20:48.718 [info] Extension host terminating: renderer disconnected for too long (1)
+2025-10-31 21:20:48.724 [info] Lock '/home/davineves/.vscode-server/data/User/workspaceStorage/849d7adab7cba587fcde7054ea4cc778-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-10-31 21:20:48.957 [info] Extension host with pid 2376509 exiting with code 0

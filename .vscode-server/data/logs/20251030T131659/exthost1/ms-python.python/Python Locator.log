@@ -1,0 +1,63 @@
+2025-10-30 13:17:01.350 [info] Starting Python Locator /home/davineves/.vscode-server/extensions/ms-python.python-2025.16.0-linux-x64/python-env-tools/bin/pet server
+2025-10-30 13:17:01.393 [info] Discovered env: /bin/python
+2025-10-30 13:17:01.395 [info] Discovered env: /home/linuxbrew/.linuxbrew/bin/python3.13
+2025-10-30 13:17:01.401 [info] Discovered env: /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 13:17:01.401 [info] Discovered env: /usr/bin/python
+2025-10-30 13:17:01.402 [info] Locator Conda took 125.019884ms
+2025-10-30 13:17:01.402 [info] Locator Homebrew took 124.872245ms
+2025-10-30 13:17:01.402 [info] Locator LinuxGlobal took 123.874278ms
+2025-10-30 13:17:01.402 [info] Locator PipEnv took 5.766762ms
+2025-10-30 13:17:01.402 [info] Locator Pixi took 1.314544ms
+2025-10-30 13:17:01.402 [info] Locator Poetry took 4.831882ms
+2025-10-30 13:17:01.402 [info] Locator PyEnv took 1.965245ms
+2025-10-30 13:17:01.402 [info] Locator Venv took 2.950966ms
+2025-10-30 13:17:01.402 [info] Locator VirtualEnv took 4.270472ms
+2025-10-30 13:17:01.402 [info] Locator VirtualEnvWrapper took 213.621µs
+2025-10-30 13:17:01.402 [info] Locator GlobalVirtualEnvs took 3.096219ms
+2025-10-30 13:17:01.402 [info] Locator Locators took 135.027792ms
+2025-10-30 13:17:01.402 [info] Locator Path took 178.082157ms
+2025-10-30 13:17:01.402 [info] Locator Workspaces took 49.886729ms
+2025-10-30 13:17:01.402 [info] Refresh completed in 179ms
+2025-10-30 13:17:01.435 [info] Resolved /home/linuxbrew/.linuxbrew/bin/python3.13
+2025-10-30 13:17:01.438 [info] Resolved /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 13:17:02.467 [info] Resolved Python Environment /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 13:27:34.047 [info] Resolved Python Environment /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 13:27:49.873 [info] Discovered env: /home/davineves/venv/bin/python
+2025-10-30 13:27:49.903 [info] Discovered env: /home/linuxbrew/.linuxbrew/bin/python3.13
+2025-10-30 13:27:49.934 [info] Discovered env: /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 13:27:49.948 [info] Discovered env: /bin/python
+2025-10-30 13:27:49.951 [info] Discovered env: /usr/bin/python
+2025-10-30 13:27:49.980 [info] Resolved /home/linuxbrew/.linuxbrew/bin/python3.13
+2025-10-30 13:27:50.004 [info] Resolved /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 13:27:50.016 [info] Locator Conda took 153.709191ms
+2025-10-30 13:27:50.016 [info] Locator Homebrew took 138.09698ms
+2025-10-30 13:27:50.016 [info] Locator LinuxGlobal took 152.633226ms
+2025-10-30 13:27:50.016 [info] Locator PipEnv took 594.165µs
+2025-10-30 13:27:50.016 [info] Locator Pixi took 763.492µs
+2025-10-30 13:27:50.016 [info] Locator Poetry took 5.139289ms
+2025-10-30 13:27:50.016 [info] Locator PyEnv took 847.84µs
+2025-10-30 13:27:50.016 [info] Locator Venv took 2.587774ms
+2025-10-30 13:27:50.016 [info] Locator VirtualEnv took 1.674659ms
+2025-10-30 13:27:50.016 [info] Locator VirtualEnvWrapper took 1.44143ms
+2025-10-30 13:27:50.016 [info] Locator GlobalVirtualEnvs took 263.472µs
+2025-10-30 13:27:50.016 [info] Locator Locators took 160.522195ms
+2025-10-30 13:27:50.016 [info] Locator Path took 225.541418ms
+2025-10-30 13:27:50.016 [info] Locator Workspaces took 91.342881ms
+2025-10-30 13:27:50.016 [info] Refresh completed in 225ms
+2025-10-30 13:28:22.620 [info] Resolved Python Environment /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 13:28:22.741 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:29:21.833 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:33:16.503 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:33:51.188 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:42:57.874 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:44:04.149 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:44:45.435 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:48:49.327 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:50:19.876 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:52:58.514 [info] Resolved Python Environment /home/davineves/.venv/bin/python
+2025-10-30 13:52:59.727 [error] Failed to execute Python to resolve info "/home/davineves/.vscode-server/extensions/.74328a22-5af0-4f4d-a946-481ce08ff016/resources/python": No such file or directory (os error 2)
+2025-10-30 13:52:59.727 [warning] Unknown Python Env "/home/davineves/.vscode-server/extensions/.74328a22-5af0-4f4d-a946-481ce08ff016/resources/python"
+2025-10-30 13:52:59.727 [error] Failed to resolve env "/home/davineves/.vscode-server/extensions/.74328a22-5af0-4f4d-a946-481ce08ff016/resources/python"
+2025-10-30 13:52:59.728 [error] Failed to execute Python to resolve info "/home/davineves/.vscode-server/extensions/.74328a22-5af0-4f4d-a946-481ce08ff016/resources/templates/python": No such file or directory (os error 2)
+2025-10-30 13:52:59.728 [warning] Unknown Python Env "/home/davineves/.vscode-server/extensions/.74328a22-5af0-4f4d-a946-481ce08ff016/resources/templates/python"
+2025-10-30 13:52:59.728 [error] Failed to resolve env "/home/davineves/.vscode-server/extensions/.74328a22-5af0-4f4d-a946-481ce08ff016/resources/templates/python"

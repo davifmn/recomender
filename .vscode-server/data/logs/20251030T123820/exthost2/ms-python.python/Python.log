@@ -1,0 +1,18 @@
+2025-10-30 12:41:42.218 [info] Native locator: Refresh started
+2025-10-30 12:41:42.464 [info] Native locator: Refresh finished in 1026 ms
+2025-10-30 12:41:43.737 [info] Native locator: Refresh started
+2025-10-30 12:41:45.104 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2025-10-30 12:41:45.339 [info] Native locator: Refresh finished in 1603 ms
+2025-10-30 12:41:45.702 [info] Native locator: Refresh started
+2025-10-30 12:41:45.903 [info] Native locator: Refresh finished in 199 ms
+2025-10-30 12:41:45.915 [info] > pyenv which python
+2025-10-30 12:41:45.915 [info] cwd: .
+2025-10-30 12:41:47.873 [info] Starting Pylance language server.
+2025-10-30 12:42:10.112 [info] Native locator: Refresh started
+2025-10-30 12:42:10.331 [info] Native locator: Refresh finished in 219 ms
+2025-10-30 12:42:14.527 [info] Active interpreter [/home/davineves]:  /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 12:42:14.530 [info] Discover tests for workspace name: davineves - uri: /home/davineves
+2025-10-30 12:42:14.532 [info] Python interpreter path: /home/linuxbrew/.linuxbrew/bin/python3
+2025-10-30 12:43:21.408 [info] Discover tests for workspace name: davineves - uri: /home/davineves/main.py
+2025-10-30 12:43:22.320 [info] Send text to terminal: /home/linuxbrew/.linuxbrew/bin/python3 /home/davineves/main.py
+2025-10-30 12:45:04.684 [info] Discover tests for workspace name: davineves - uri: /home/davineves/main.py
