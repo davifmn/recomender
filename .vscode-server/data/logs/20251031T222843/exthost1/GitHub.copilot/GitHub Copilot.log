@@ -46,3 +46,6 @@
 2025-11-01 00:13:03.195 [info] [streamChoices] solution 0 returned. finish reason: [stop]
 2025-11-01 00:13:03.287 [info] [fetchCompletions] Request b14250b3-70a0-4fa6-b8c0-56c94801b308 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 249.35160299949348ms
 2025-11-01 00:13:03.364 [info] [streamChoices] solution 0 returned. finish reason: [stop]
+2025-11-01 01:28:32.157 [info] [fetcher] Using Helix fetcher, Electron fetcher is not available.
+2025-11-01 01:28:32.157 [info] [code-referencing] Public code references are enabled.
+2025-11-01 01:28:32.358 [info] [fetcher] Using Helix fetcher, Electron fetcher is not available.
