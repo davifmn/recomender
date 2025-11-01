@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: playlists-recommender
+  namespace: argocd
+spec:
+  project: davineves-project
+  source:
+    repoURL: https://github.com/<your-user>/<your-repo>.git
+    path: .
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: davineves
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
