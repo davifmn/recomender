@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: davineves-recomender-service
+spec:
+  # Expõe o serviço para fora do cluster (cria um IP externo)
+  type: LoadBalancer 
+  ports:
+  - port: 30502 # A porta EXTERNA (sua porta de estudante)
+    targetPort: 5000 # A porta do container (onde o Flask está rodando)
+    protocol: TCP
+    
+  # Seleciona os pods que têm o "selo" (label) que definimos no Deployment
+  selector:
+    app: davineves-recomender
