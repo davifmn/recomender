@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   name: davineves-recomender-deployment
 spec:
-  # Queremos 2 cópias (replicas) rodando para alta disponibilidade
-  replicas: 2
+
+  replicas: 3
   selector:
     matchLabels:
       # Este é o "selo" (label) que o Service usará para encontrar estes pods
