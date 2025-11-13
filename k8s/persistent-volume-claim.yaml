@@ -1,11 +1,18 @@
-apiVersion: /v1
-kind: PersistentVolumeClaim
+apiVersion: batch/v1
+kind: Job
 metadata:
+  # O nome do Job deve ser único para cada execução.
+  # Usar generateName é uma boa prática para que o Kubernetes crie um nome único.
+  # Se você preferir um nome fixo, lembre-se de limpá-lo antes de reaplicar.
   name: davineves-model-generator-v1
-
+  namespace: davineves
 spec:
-
-  backoffLimit: 2
+  # TTL para limpar o Job automaticamente após ele terminar (seja com sucesso ou falha).
+  # Requer que a feature gate TTLAfterFinished esteja ativa no cluster.
+  # Isso ajuda a não deixar Jobs antigos poluindo o ambiente.
+  ttlSecondsAfterFinished: 100
+  # Número de tentativas antes de marcar o Job como falho.
+  backoffLimit: 4
   template:
     spec:
       containers:
