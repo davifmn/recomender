@@ -32,4 +32,4 @@ spec:
       volumes:
       - name: model-storage
         persistentVolumeClaim:
-          claimName: davineves-model-pvc
+          claimName: recommender-model-data-pvc
