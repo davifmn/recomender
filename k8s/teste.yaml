@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: simple-echo-job
+  namespace: davineves
+spec:
+  backoffLimit: 2
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: echo
+        image: busybox
+        command: ["sh", "-c", "echo Hello from Kubernetes job!"]
