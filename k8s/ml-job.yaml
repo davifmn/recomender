@@ -22,3 +22,16 @@ spec:
         - name: model-storage
           persistentVolumeClaim:
             claimName: davineves-model-pvc
+      volumeMounts:
+        - name: data-storage
+          mountPath: /data
+        - name: model-storage
+          mountPath: /model
+      volumes:
+        - name: data-storage
+          persistentVolumeClaim:
+            claimName: davineves-data-pvc
+        - name: model-storage
+          persistentVolumeClaim:
+            claimName: davineves-model-pvc
+
