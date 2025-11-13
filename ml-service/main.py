@@ -114,7 +114,7 @@ if __name__ == "__main__":
     MIN_CONFIDENCE = 0.5
     
     # Define the output file for the rules
-    OUTPUT_FILE = '/model/playlist_rules.pkl'
+    OUTPUT_FILE = ''/app/data/playlist_rules.pkl''
     
     # --- Execution ---
     
