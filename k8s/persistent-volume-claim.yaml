@@ -1,1 +1,21 @@
 
+# persistent-volume-claim.yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  # Nome que será referenciado no seu ml-job.yaml
+  name: recommender-model-data-pvc
+  namespace: davineves # Use o mesmo namespace do seu Deployment/Service
+spec:
+  # Define o modo de acesso. ReadWriteOnce significa que o volume pode ser montado
+  # como leitura/escrita por um único nó (que é o que um Job geralmente precisa).
+  accessModes:
+    - ReadWriteOnce
+  # Define qual StorageClass usar. 'standard' é um nome comum,
+  # mas você deve ajustá-lo se usar um StorageClass customizado.
+  # Remova a linha se quiser usar o StorageClass default do cluster.
+  storageClassName: standard 
+  resources:
+    requests:
+      # Solicita 1 Gigabytes de armazenamento. Ajuste conforme sua necessidade.
+      storage: 1Gi
