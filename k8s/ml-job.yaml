@@ -1,34 +1,35 @@
-# ml-job.yaml
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: recommender-model-training-job
-  namespace: davineves # Use o mesmo namespace
+  # Nome do Job. Ele vai criar um Pod com um sufixo aleatório.
+  name: davineves-recomender-training-job
 spec:
-  backoffLimit: 3
   template:
-    metadata:
-
-      labels:
-        app: recommender-ml-job
     spec:
-
-      restartPolicy: OnFailure
       containers:
-      - name: ml-trainer
-        image: davifraga/recomender-ml:0.1 
+      - name: training-container
+        # Imagem que contém seu script de treinamento
+        image: davifmn/recomender-ia:latest
         
-        command: ["python"]
-        args: ["main.py"] 
+        # --- CORREÇÃO APLICADA AQUI ---
+        # Alterado para executar um script de treinamento que termina após a execução,
+        # em vez de iniciar uma API.
+        command: ["python", "/app/train.py"]
         
-        # Define os caminhos de montagem para o volume
+        # Monta o "disco" (PVC) no diretório /data dentro do contêiner.
+        # O script de treinamento deve salvar o modelo em /data/
         volumeMounts:
-        - name: model-data-volume
-          # O caminho onde o contêiner acessará os dados (ex: /app/data)
-          mountPath: /app/data
+        - name: model-storage
+          mountPath: /data
       
-      # Define o volume a ser usado, referenciando o PVC
+      # Define qual PVC (PersistentVolumeClaim) usar
       volumes:
-      - name: model-data-volume
+      - name: model-storage
         persistentVolumeClaim:
-          claimName: recommender-model-data-pvc # Referencia o PVC criado acima
+          # O nome deve ser exatamente o mesmo do arquivo persistent-volume-claim.yaml
+          claimName: davineves-model-pvc
+          
+      # Garante que, se o Job falhar, ele não tentará reiniciar indefinidamente.
+      restartPolicy: Never
+  # O Job tentará executar até 3 vezes em caso de falha.
+  backoffLimit: 3
