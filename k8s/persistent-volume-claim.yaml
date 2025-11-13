@@ -3,14 +3,15 @@ kind: PersistentVolumeClaim
 metadata:
   name: davi-model-pvc
 spec:
-  # Usa o seletor para encontrar o PV correto
+  # PROBLEMA 1: Selector é para provisionamento estático e entra em conflito com storageClassName.
   selector:
     matchLabels:
       namespace: davineves
   
-  # Nome da StorageClass, como especificado no enunciado
+  # PROBLEMA 2: Esta StorageClass provavelmente não existe no seu cluster.
   storageClassName: default-storage-class-davineves
   
+  # PROBLEMA 3: ReadWriteMany não é suportado por provedores de nuvem padrão (GCP, AWS, Azure).
   accessModes:
     - ReadWriteMany
   
