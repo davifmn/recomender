@@ -9,7 +9,7 @@ spec:
       containers:
       - name: ml-job-container
         # Sua imagem de ML
-        image: davifraga/recomender-ml:0.1
+        image: davifraga/recomender-ml:0.2
         
         # Monta o "disco" (PVC) dentro do container
         volumeMounts:
