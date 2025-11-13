@@ -24,15 +24,11 @@ spec:
       - name: ml-trainer
         image: davifmn/recomender-ml:latest # <-- Use sua imagem
         command: ["python", "main.py"]
-        env:
-          - name: MIN_SUPPORT
-            value: "0.08"
-          - name: MIN_CONFIDENCE
-            value: "0.5"
+        
         # 'volumeMounts' está DENTRO do container principal
-        volumeMounts:
-        - name: ml-data-storage
-          mountPath: /app/data
+        # volumeMounts:
+        # - name: ml-data-storage
+        #   mountPath: /app/data
       
       # 'volumes' fica aqui, definindo o volume para todo o Pod.
       volumes:
