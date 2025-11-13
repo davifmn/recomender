@@ -1,1 +1,34 @@
+# ml-job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: recommender-model-training-job
+  namespace: davineves # Use o mesmo namespace
+spec:
+  backoffLimit: 3
+  template:
+    metadata:
 
+      labels:
+        app: recommender-ml-job
+    spec:
+
+      restartPolicy: OnFailure
+      containers:
+      - name: ml-trainer
+        image: davifraga/recomender-ml:0.1 
+        
+        command: ["python"]
+        args: ["main.py"] 
+        
+        # Define os caminhos de montagem para o volume
+        volumeMounts:
+        - name: model-data-volume
+          # O caminho onde o contêiner acessará os dados (ex: /app/data)
+          mountPath: /app/data
+      
+      # Define o volume a ser usado, referenciando o PVC
+      volumes:
+      - name: model-data-volume
+        persistentVolumeClaim:
+          claimName: recommender-model-data-pvc # Referencia o PVC criado acima
