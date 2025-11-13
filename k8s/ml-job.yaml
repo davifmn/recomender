@@ -1,1 +1,24 @@
 
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ml-train-job-2025-11-13
+  namespace: davineves
+spec:
+  template:
+    metadata:
+      labels:
+        app: ml-train
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: ml-trainer
+        image: davifraga/recomender-ml:0.1  # substitua pela sua imagem real
+        command: ["python", "train_model.py"]
+        volumeMounts:
+        - name: model-storage
+          mountPath: /data
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: davineves-model-pvc
