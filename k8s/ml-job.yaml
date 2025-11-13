@@ -1,1 +1,26 @@
-
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: playlist-recommender-training
+spec:
+  template:
+    spec:
+      containers:
+      - name: ml-trainer
+        # Substitua 'seu-registro/seu-repo' pelo seu registro de imagem Docker
+        # Ex: davifmn/recomender-ml
+        image: nginx:latest
+        command: ["python", "main.py"]
+        volumeMounts:
+        - name: data-storage
+          # O script salva o modelo em '/app/data/playlist_rules.pkl'
+          # Montamos o volume persistente neste caminho
+          mountPath: /app/data
+      volumes:
+      - name: data-storage
+        persistentVolumeClaim:
+          # Este PVC deve ser criado separadamente e conter
+          # os arquivos CSV de input (2023_spotify_ds1.csv, 2023_spotify_ds2.csv)
+          claimName: ml-data-pvc
+      restartPolicy: Never
+  backoffLimit: 4
