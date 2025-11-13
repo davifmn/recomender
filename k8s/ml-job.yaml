@@ -1,1 +1,21 @@
-
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: davineves-model-generator-
+  namespace: davineves
+spec:
+  ttlSecondsAfterFinished: 100
+  backoffLimit: 4
+  template:
+    spec:
+      containers:
+      - name: ml-job-container
+        image: davifraga/recomender-ml:0.1
+        volumeMounts:
+        - name: model-storage
+          mountPath: /data
+      restartPolicy: Never
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: davineves-model-pvc
