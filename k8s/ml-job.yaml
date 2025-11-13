@@ -1,1 +1,29 @@
-
+apiVersion: batch/v1
+kind: Job
+metadata:
+  # Nome do job (use seu login)
+  name: davineves-model-generator
+spec:
+  template:
+    spec:
+      containers:
+      - name: ml-job-container
+        # Sua imagem de ML
+        image: davifraga/recomender-ml:0.1
+        
+        # Monta o "disco" (PVC) dentro do container
+        volumeMounts:
+        - name: model-storage
+          # Onde o disco será montado dentro do container
+          mountPath: /data
+          
+      # Define qual PVC usar
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          # O nome do PVC que criamos no arquivo anterior
+          claimName: davineves-model-pvc
+          
+      # O job não deve reiniciar se falhar (ele deve apenas rodar uma vez)
+      restartPolicy: Never
+  backoffLimit: 4
