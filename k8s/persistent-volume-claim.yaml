@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: davi-model-pvc
+spec:
+  # Usa o seletor para encontrar o PV correto
+  selector:
+    matchLabels:
+      namespace: davineves
+  
+  # Nome da StorageClass, como especificado no enunciado
+  storageClassName: default-storage-class-davineves
+  
+  accessModes:
+    - ReadWriteMany
+  
+  resources:
+    requests:
+      storage: 1Gi

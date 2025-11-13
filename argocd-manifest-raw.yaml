@@ -1,0 +1,226 @@
+cat ~/.ssh/id_ed25519.pubmetadata:
+  creationTimestamp: "2025-11-01T14:34:48Z"
+  generation: 17294
+  managedFields:
+  - apiVersion: argoproj.io/v1alpha1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:spec:
+        .: {}
+        f:destination:
+          .: {}
+          f:namespace: {}
+          f:server: {}
+        f:project: {}
+        f:source:
+          .: {}
+          f:path: {}
+          f:repoURL: {}
+          f:targetRevision: {}
+        f:syncPolicy:
+          .: {}
+          f:automated:
+            .: {}
+            f:selfHeal: {}
+      f:status:
+        .: {}
+        f:health: {}
+        f:sourceHydrator: {}
+        f:summary: {}
+        f:sync:
+          .: {}
+          f:comparedTo:
+            .: {}
+            f:destination: {}
+            f:source: {}
+    manager: argocd-server
+    operation: Update
+    time: "2025-11-04T20:21:35Z"
+  - apiVersion: argoproj.io/v1alpha1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions: {}
+        f:controllerNamespace: {}
+        f:health:
+          f:lastTransitionTime: {}
+          f:status: {}
+        f:history: {}
+        f:operationState:
+          .: {}
+          f:finishedAt: {}
+          f:message: {}
+          f:operation:
+            .: {}
+            f:initiatedBy:
+              .: {}
+              f:username: {}
+            f:retry: {}
+            f:sync:
+              .: {}
+              f:revision: {}
+              f:syncStrategy:
+                .: {}
+                f:hook: {}
+          f:phase: {}
+          f:startedAt: {}
+          f:syncResult:
+            .: {}
+            f:resources: {}
+            f:revision: {}
+            f:source:
+              .: {}
+              f:path: {}
+              f:repoURL: {}
+              f:targetRevision: {}
+        f:reconciledAt: {}
+        f:resourceHealthSource: {}
+        f:resources: {}
+        f:sourceType: {}
+        f:sync:
+          f:comparedTo:
+            f:destination:
+              f:namespace: {}
+              f:server: {}
+            f:source:
+              f:path: {}
+              f:repoURL: {}
+              f:targetRevision: {}
+          f:revision: {}
+          f:status: {}
+    manager: argocd-application-controller
+    operation: Update
+    time: "2025-11-12T15:00:51Z"
+  name: davineves-playlist-app
+  namespace: argocd
+  resourceVersion: "17804759"
+  uid: 784582b0-ac45-469a-ada0-56c6d6a0733c
+spec:
+  destination:
+    namespace: davineves
+    server: https://kubernetes.default.svc
+  project: davineves-project
+  source:
+    path: k8s
+    repoURL: https://github.com/davifmn/playlist-argocd.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true
+status:
+  conditions:
+  - lastTransitionTime: "2025-11-04T20:21:35Z"
+    message: 'Failed sync attempt to 46903b4a53f1a7fd0dcf47e5009d39745318aa01: one
+      or more objects failed to apply, reason: error when replacing "/dev/shm/2592075265":
+      Job.batch "playlist-ml-ds1-v2" is invalid: [spec.selector: Required value, spec.template.metadata.labels:
+      Invalid value: '
+    type: SyncError
+  controllerNamespace: argocd
+  health:
+    lastTransitionTime: "2025-11-11T17:54:27Z"
+    status: Missing
+  history:
+  - deployStartedAt: "2025-11-01T15:18:25Z"
+    deployedAt: "2025-11-01T15:18:26Z"
+    id: 0
+    initiatedBy:
+      automated: true
+    revision: 59dc7488e864921f2a4a67af9bd1105d8290a987
+    source:
+      path: k8s
+      repoURL: https://github.com/davifmn/playlist-argocd.git
+      targetRevision: main
+  operationState:
+    finishedAt: "2025-11-04T20:21:35Z"
+    message: 'one or more objects failed to apply, reason: error when replacing "/dev/shm/2592075265":
+      Job.batch "playlist-ml-ds1-v2" is invalid: [spec.selector: Required value, spec.template.metadata.labels:
+      Invalid value: '
+    operation:
+      initiatedBy:
+        username: davineves
+      retry: {}
+      sync:
+        revision: 46903b4a53f1a7fd0dcf47e5009d39745318aa01
+        syncStrategy:
+          hook: {}
+    phase: Failed
+    startedAt: "2025-11-04T20:21:34Z"
+    syncResult:
+      resources:
+      - group: ""
+        hookPhase: Running
+        kind: PersistentVolumeClaim
+        message: persistentvolumeclaim/project2-claim unchanged
+        name: project2-claim
+        namespace: davineves
+        status: Synced
+        syncPhase: Sync
+        version: v1
+      - group: ""
+        hookPhase: Running
+        kind: Service
+        message: service/davineves-playlist-api unchanged
+        name: davineves-playlist-api
+        namespace: davineves
+        status: Synced
+        syncPhase: Sync
+        version: v1
+      - group: batch
+        hookPhase: Failed
+        images:
+        - docker.io/davifraga/playlist-ml:0.1
+        kind: Job
+        message: 'error when replacing "/dev/shm/2592075265": Job.batch "playlist-ml-ds1-v2"
+          is invalid: [spec.selector: Required value, spec.template.metadata.labels:
+          Invalid value: '
+        name: playlist-ml-ds1-v2
+        namespace: davineves
+        status: SyncFailed
+        syncPhase: Sync
+        version: v1
+      revision: 46903b4a53f1a7fd0dcf47e5009d39745318aa01
+      source:
+        path: k8s
+        repoURL: https://github.com/davifmn/playlist-argocd.git
+        targetRevision: main
+  reconciledAt: "2025-11-12T15:00:51Z"
+  resourceHealthSource: appTree
+  resources:
+  - health:
+      message: Resource has not been created
+      status: Missing
+    kind: PersistentVolumeClaim
+    name: project2-claim
+    namespace: davineves
+    status: OutOfSync
+    version: v1
+  - health:
+  
+      status: Healthy
+    kind: Service
+    name: davineves-playlist-api
+    namespace: davineves
+    status: Synced
+    version: v1
+  - group: batch
+    health:
+      status: Healthy
+    kind: Job
+    name: playlist-ml-ds1-v2
+    namespace: davineves
+    status: OutOfSync
+    version: v1
+  sourceHydrator: {}
+  sourceType: Directory
+  summary: {}
+  sync:
+    comparedTo:
+      destination:
+        namespace: davineves
+        server: https://kubernetes.default.svc
+      source:
+        path: k8s
+        repoURL: https://github.com/davifmn/playlist-argocd.git
+        targetRevision: main
+    revision: 46903b4a53f1a7fd0dcf47e5009d39745318aa01
+    status: OutOfSync
