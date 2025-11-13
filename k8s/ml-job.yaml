@@ -1,1 +1,30 @@
 
+apiVersion: batch/v1
+kind: Job
+metadata:
+  # Mudei o nome para v1 para evitar conflito com o job travado
+  name: davineves-model-generator-v1
+  namespace: davineves
+spec:
+  # Define quantas vezes ele pode tentar se falhar
+  backoffLimit: 4
+  template:
+    metadata:
+      # --- AQUI ESTAVA O ERRO ---
+      # O template PRECISA de labels para o K8s identificar o pod
+      labels:
+        app: model-generator
+        component: ml-job
+      # --------------------------
+    spec:
+      containers:
+      - name: ml-job-container
+        image: davifraga/recomender-ml:0.1
+        volumeMounts:
+        - name: model-storage
+          mountPath: /data
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: davineves-model-pvc
+      restartPolicy: Never
