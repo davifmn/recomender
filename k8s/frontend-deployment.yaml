@@ -29,7 +29,7 @@ spec:
           readOnly: true
           
       # Define qual PVC usar
-      # volumes:
-      # - name: model-storage
-      #   persistentVolumeClaim:
-      #     claimName: davineves-model-pvc
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: davineves-model-pvc
