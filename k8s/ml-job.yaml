@@ -14,7 +14,7 @@ spec:
       containers:
         - name: ml-trainer
           image: davifraga/recomender-ml:0.1    # ajuste sua imagem aqui
-          command: ["python", "train_model.py"]  # ajuste conforme o seu script
+          command: ["python", "main.py"]  # ajuste conforme o seu script
           volumeMounts:
             - name: model-storage
               mountPath: /data
