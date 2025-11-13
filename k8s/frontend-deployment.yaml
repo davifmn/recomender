@@ -4,7 +4,7 @@ metadata:
   name: davineves-recomender-deployment
 spec:
 
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       # Este é o "selo" (label) que o Service usará para encontrar estes pods
@@ -19,16 +19,16 @@ spec:
         # Sua imagem da API (com o código de hot-reload)
         image: nginx:latest
         ports:
-        - containerPort: 80 # A porta que o Flask escuta (de dentro do Dockerfile)
+        - containerPort: 8080 # A porta que o Flask escuta (de dentro do Dockerfile)
         
         # Monta o MESMO "disco" (PVC)
         volumeMounts:	
-            - mountPath: /model	
+            - mountPath: /app/model	
               name: model-storage	
               readOnly: true
           
       # Define qual PVC usar
-      # volumes:
-      # - name: model-storage
-      #   persistentVolumeClaim:
-      #     claimName: davineves-model-pvc
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: davineves-model-pvc
