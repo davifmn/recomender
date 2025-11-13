@@ -110,7 +110,7 @@ if __name__ == "__main__":
     FILE_NAMES = ['data/2023_spotify_ds1.csv', 'data/2023_spotify_ds2.csv']
     
     # --- Tunable Parameters ---
-    MIN_SUPPORT = 0.03  # Com FP-Growth, 0.01 pode funcionar!
+    MIN_SUPPORT = 0.08  # Com FP-Growth, 0.01 pode funcionar!
     MIN_CONFIDENCE = 0.5
     
     # Define the output file for the rules
