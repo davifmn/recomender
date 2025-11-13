@@ -21,12 +21,12 @@ spec:
         ports:
         - containerPort: 80 # A porta que o Flask escuta (de dentro do Dockerfile)
         
-        # Monta o MESMO "disco" (PVC)
-        # volumeMounts:
-        # - name: model-storage
-        #   mountPath: /data
-          # Este container só precisa ler, não escrever
-          # readOnly: true
+        #Monta o MESMO "disco" (PVC)
+        volumeMounts:
+        - name: model-storage
+          mountPath: /data
+          Este container só precisa ler, não escrever
+          readOnly: true
           
       # Define qual PVC usar
       # volumes:
