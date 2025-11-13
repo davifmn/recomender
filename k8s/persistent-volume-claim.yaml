@@ -17,5 +17,5 @@ spec:
   storageClassName: standard 
   resources:
     requests:
-      # Solicita 5 Gigabytes de armazenamento. Ajuste conforme sua necessidade.
-      storage: 5Gi
+      # Solicita 2 Gigabytes de armazenamento. Ajuste conforme sua necessidade.
+      storage: 2Gi
