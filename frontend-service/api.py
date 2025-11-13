@@ -7,7 +7,7 @@ from flask import Flask, request, jsonify
 
 # --- Configuration ---
 MODEL_PATH = "/model/playlist_rules.pkl"
-MODEL_VERSION = "1.0.1"
+MODEL_VERSION = "1.0.2"
 
 # --- App Initialization ---
 app = Flask(__name__)
