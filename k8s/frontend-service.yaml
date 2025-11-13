@@ -4,7 +4,7 @@ metadata:
   name: playlists-recommender-system-service
 spec:
   selector:
-    app: playlists-recommender-system
+    app: davineves-recomender
   type: NodePort
   ports:
     - protocol: TCP
