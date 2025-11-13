@@ -5,11 +5,9 @@ metadata:
 spec:
   template:
     spec:
-      # Este Init Container é executado primeiro. Ele prepara o ambiente.
       initContainers:
       - name: data-downloader
-        image: busybox:1.28 # Imagem pequena com ferramentas como 'wget'
-        # O comando baixa os dois arquivos CSV para o volume montado
+        image: busybox:1.28
         command: ['sh', '-c']
         args:
         - >
@@ -17,30 +15,31 @@ spec:
           wget --no-check-certificate "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv" -O /data/2023_spotify_ds1.csv;
           wget --no-check-certificate "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds2.csv" -O /data/2023_spotify_ds2.csv;
           echo "Downloads concluídos.";
+        # 'volumeMounts' está DENTRO do initContainer
         volumeMounts:
         - name: ml-data-storage
           mountPath: /data
 
-      # Este é o container principal, que executa seu script Python.
-      # Ele só começa depois que o Init Container termina.
       containers:
       - name: ml-trainer
-        # Substitua pela sua imagem Docker
-        image: davifmn/recomender-ml:latest
+        image: davifmn/recomender-ml:latest # <-- Use sua imagem
         command: ["python", "main.py"]
-
+        env:
+          - name: MIN_SUPPORT
+            value: "0.08"
+          - name: MIN_CONFIDENCE
+            value: "0.5"
+        # 'volumeMounts' está DENTRO do container principal
         volumeMounts:
         - name: ml-data-storage
-          # Montamos o volume em /app/data, que é onde seu script
-          # lê os CSVs e salva o .pkl
           mountPath: /app/data
       
-      # O volume que será compartilhado entre os containers
+      # 'volumes' fica aqui, definindo o volume para todo o Pod.
       volumes:
       - name: ml-data-storage
         persistentVolumeClaim:
-          # O PVC deve ser criado separadamente.
-          claimName: ml-data-pvc
+          # Use o nome do PVC que você criou
+          claimName: davineves-model-pvc 
           
       restartPolicy: Never
   backoffLimit: 4
