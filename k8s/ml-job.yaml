@@ -1,21 +1,19 @@
-
 apiVersion: batch/v1
 kind: Job
 metadata:
-  # Mudei o nome para v1 para evitar conflito com o job travado
+  # O nome do Job deve ser único para cada execução.
+  # Usar generateName é uma boa prática para que o Kubernetes crie um nome único.
+  # Se você preferir um nome fixo, lembre-se de limpá-lo antes de reaplicar.
   name: davineves-model-generator-v1
   namespace: davineves
 spec:
-  # Define quantas vezes ele pode tentar se falhar
+  # TTL para limpar o Job automaticamente após ele terminar (seja com sucesso ou falha).
+  # Requer que a feature gate TTLAfterFinished esteja ativa no cluster.
+  # Isso ajuda a não deixar Jobs antigos poluindo o ambiente.
+  ttlSecondsAfterFinished: 100
+  # Número de tentativas antes de marcar o Job como falho.
   backoffLimit: 4
   template:
-    metadata:
-      # --- AQUI ESTAVA O ERRO ---
-      # O template PRECISA de labels para o K8s identificar o pod
-      labels:
-        app: model-generator
-        component: ml-job
-      # --------------------------
     spec:
       containers:
       - name: ml-job-container
@@ -23,8 +21,10 @@ spec:
         volumeMounts:
         - name: model-storage
           mountPath: /data
+      # A política de reinicialização deve ser Never ou OnFailure para Jobs.
+      restartPolicy: Never
       volumes:
       - name: model-storage
         persistentVolumeClaim:
+          # Garanta que este PVC existe e está no estado 'Bound' no namespace 'davineves'.
           claimName: davineves-model-pvc
-      restartPolicy: Never
