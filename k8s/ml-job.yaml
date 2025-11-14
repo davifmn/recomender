@@ -1,41 +1,32 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: playlist-rules-generator-job
+  generateName: ml-train-job-
+  namespace: davineves
+  annotations:
+    argocd.argoproj.io/hook: Sync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
+  ttlSecondsAfterFinished: 600
   template:
     spec:
-      initContainers:
-      - name: data-downloader
-        image: busybox:1.28
-        command: ['sh', '-c']
-        args:
-        - >
-          rm -f /data/*;
-          wget --no-check-certificate "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds1.csv" -O /data/2023_spotify_ds1.csv;
-          wget --no-check-certificate "https://homepages.dcc.ufmg.br/~cunha/hosted/cloudcomp-2023s2-datasets/2023_spotify_ds2.csv" -O /data/2023_spotify_ds2.csv;
-          echo "Downloads concluídos.";
-        # 'volumeMounts' está DENTRO do initContainer
-        volumeMounts:
-        - name: ml-data-storage
-          mountPath: /data
-
       containers:
-      - name: ml-trainer
-        image: davifmn/recomender-ml:latest # <-- Use sua imagem
-        command: ["python", "main.py"]
-        
-        # 'volumeMounts' está DENTRO do container principal
-        # volumeMounts:
-        # - name: ml-data-storage
-        #   mountPath: /app/data
-      
-      # 'volumes' fica aqui, definindo o volume para todo o Pod.
+      - name: ml-generator
+        image: davineves/ml-generator:v2
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: shared-volume
+          mountPath: /shared
+        - name: dataset-volume
+          mountPath: /app/home/datasets/spotify/2023_spotify_ds1.csv
+          subPath: 2023_spotify_ds2.csv
       volumes:
-      - name: ml-data-storage
+      - name: shared-volume
         persistentVolumeClaim:
-          # Use o nome do PVC que você criou
-          claimName: davineves-model-pvc 
-          
+          claimName: project2-pvc
+      - name: dataset-volume
+        hostPath:
+          path: /home/datasets/spotify
+          type: Directory
       restartPolicy: Never
-  backoffLimit: 4
+  backoffLimit: 2
